@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url('../../webFonts/Pacifico-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$primary-color: #e2e8f0;
+$secondary-color: white;
+$button-radius: 5px;
+$card-radius: 16px;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.container {
+  padding: 20px;
+}
+
+.mealContainer {
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Pacifico-Regular';
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.button {
+  padding: 8px 15px;
+  color: white;
+  border: none;
+  border-radius: $button-radius;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.instructions {
+  text-align: justify;
+  padding: 10px;
+}
+
+.ingredientsCard {
+  background: $secondary-color;
+  padding: 16px;
+  border-radius: $card-radius;
+  box-shadow: $shadow;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    min-width: 300px;
+  }
+}
+
+.ingredientsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 4px solid $primary-color;
+}
+
+.ingredientItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 2px solid $primary-color;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  border-top-right-radius: 25px;
+  z-index: 50;
+  position: relative;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  border-bottom: solid rgba(195, 189, 189, 0.484) 1px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+}
+
+.route {
+  font-size: 25px;
+  font-weight: bold;
+  color: blue;
+
+  @media (max-width: 600px) {
+    margin-top: 10px;
+  }
+}
+
+.footerBottom {
+  margin-top: 22px;
+  font-size: 14px;
+  color: gray;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

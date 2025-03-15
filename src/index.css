@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme{
+  --main-color: #f29724;
+  --secondary-color:#21ba75;
+  --secondary-hover:#059669;
+}
+
+.active{
+   color: white;
+   background-color:#f29724 ;
+   filter: drop-shadow(var(--main-color), 0 10px 15px -3px);
+   
+}
